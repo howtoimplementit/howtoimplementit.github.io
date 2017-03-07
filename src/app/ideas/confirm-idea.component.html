@@ -1,0 +1,16 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Confirm Idea</div>
+  <div class="panel-body">
+
+<form>
+<app-view-idea [idea]="idea"></app-view-idea>
+<br/>
+  <div class="form-group">
+
+  <button (click)="create()"  class="btn btn-primary" *ngIf="!idea._id">Create</button>
+  <button (click)="modify()"  class="btn btn-primary" *ngIf="idea._id">Modify</button>
+  <button (click)="cancel()" class="btn btn-default">Cancel</button>
+    </div>
+</form>
+  </div>
+</div>

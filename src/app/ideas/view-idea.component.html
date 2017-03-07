@@ -1,0 +1,20 @@
+<div class="control-group">
+  <label class="control-label">Title</label>
+  <div class="controls">
+    <h4>{{idea.title}}</h4>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label">Description</label>
+  <div class="controls">
+    <h4>{{idea.description}}</h4>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label">Tags</label>
+    <ul  class="list-group">
+    <li *ngFor = "let tag of idea.tags" class="list-group-item">
+      {{tag}}
+    </li>
+    </ul>
+</div>

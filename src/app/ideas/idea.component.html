@@ -1,0 +1,22 @@
+<div class="alert alert-success" role="alert" *ngIf="actionTitle">{{actionTitle}}</div>
+
+<br>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Idea Details</div>
+  <div class="panel-body">
+
+    <form>
+      <app-view-idea [idea]="idea"></app-view-idea>
+      <br/>
+      <div class="form-group">
+
+        <button (click)="modify()" class="btn btn-primary" *ngIf="actionTitle != 'Idea Deleted'">Modify</button>
+        <button (click)="delete()" class="btn btn-danger" *ngIf="actionTitle != 'Idea Deleted'">Delete</button>
+        <button (click)="cancel()" class="btn btn-default" *ngIf="actionTitle != 'Idea Deleted'">Cancel</button>
+        <button (click)="cancel()" class="btn btn-default" *ngIf="actionTitle == 'Idea Deleted'">Go To Ideas</button>
+
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Create Idea</div>
+  <div class="panel-body">
+    <form (ngSubmit)="confirm()">
+      <edit-idea [idea]="idea"></edit-idea>
+      <br/>
+
+      <div class="form-group">
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+      </div>
+    </form>
+  </div>
+</div>

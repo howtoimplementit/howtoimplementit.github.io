@@ -1,0 +1,9 @@
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Ideas</div>
+  <div class="panel-body">
+<li *ngFor="let idea of ideas" >
+  <a [routerLink] ="['/idea/view', idea._id.$oid]">{{idea.title}}</a>
+</li>
+    </div>
+</div>
