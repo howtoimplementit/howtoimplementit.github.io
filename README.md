@@ -2,7 +2,7 @@
 
 HowToImplementIT is a Angular 2 CRUD sample application to show how to develop an angular application.
 
-The backend of the application is Mongodb and the front end interacts with the AWS API Gateway, which interact with the database.
+The backend of the application is Mongodb and the front end interacts with the AWS API Gateway, which interact with the mongodatabase.
 
 Need to Implement:
 
